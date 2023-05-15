@@ -29,11 +29,11 @@ py.print("The answer is", 42)
 
 ### Pointer
 
-Create a `Pointer` from an `Int`
+Create a `Pointer`
 ```py
 var x : Int = 42  # x must be mutable
 let xPtr = Pointer[Int].address_of(x)
-print(xPtr.load())
+print(xPtr.load()) # dereference a pointer
 ```
 
 Casting type of Pointer
