@@ -1,5 +1,23 @@
 # [Mojo](https://github.com/modularml/mojo/) Cheatsheet
 
+### Interact with Python
+
+Execute Python code directly in the playground
+```py
+%%python
+print("The answer is", 42)
+```
+
+Invoke Python interpreter from Mojo
+```py
+let x: Int = 42
+
+from PythonInterface import Python
+let py = Python.import_module("builtins")
+py.print("The answer is", 42)
+```
+
+### Interact with C
 Call C function using `Intrinsics.external_call`
 
 ```
