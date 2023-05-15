@@ -1,5 +1,15 @@
 # [Mojo](https://github.com/modularml/mojo/) Cheatsheet
 
+### String
+
+Index and Slicing
+```py
+from String import String
+print(String("Hello World")[0])
+print(String("Hello World")[:5])
+print(String("Hello World")[::2])
+```
+
 ### Interact with Python
 
 Execute Python code directly in the playground
