@@ -27,6 +27,26 @@ let py = Python.import_module("builtins")
 py.print("The answer is", 42)
 ```
 
+### Pointer
+
+Create a `Pointer` from an `Int`
+```py
+var x : Int = 42  # x must be mutable
+let xPtr = Pointer[Int].address_of(x)
+print(xPtr.load())
+```
+
+Casting type of Pointer
+```py
+let yPtr : Pointer[UI8] = xPtr.bitcast[UI8]()
+```
+
+Null pointer
+```py
+Pointer[Int]()
+Pointer[Int].get_null()
+```
+
 ### Interact with C
 Call C function using `Intrinsics.external_call`
 
