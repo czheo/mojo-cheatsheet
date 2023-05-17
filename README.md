@@ -4,9 +4,16 @@
 Index and Slicing
 ```py
 from String import String
-print(String("Hello World")[0])
-print(String("Hello World")[:5])
-print(String("Hello World")[::2])
+let s : String = "hello world"
+print(s[0])
+print(s[:5])
+print(s[::2])
+print(String("hello world")[0])
+
+# Code below do not work because `StringRef` is not subscriptable
+let s = "hello world" # s is a `StringRef`
+print(s[:5])
+print("hello world"[0])
 ```
 
 ### Type casting
