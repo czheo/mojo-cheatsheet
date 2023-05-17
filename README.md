@@ -10,7 +10,7 @@ print(s[:5])
 print(s[::2])
 print(String("hello world")[0])
 
-# Code below do not work because `StringRef` is not subscriptable
+# !!Code below DO NOT work because `StringRef` is not subscriptable!!
 let s = "hello world" # s is a `StringRef`
 print(s[:5])
 print("hello world"[0])
