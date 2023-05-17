@@ -42,10 +42,9 @@ print("The answer is", 42)
 Invoke Python interpreter from Mojo
 ```py
 let x: Int = 42
-
 from PythonInterface import Python
 let py = Python.import_module("builtins")
-py.print("The answer is", 42)
+py.print("The answer is", x)
 ```
 
 ### Pointer
