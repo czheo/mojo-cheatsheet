@@ -1,4 +1,14 @@
 # [Mojo](https://github.com/modularml/mojo/) Cheatsheet
+### Integer
+
+Python like `int` to handle big numbers.
+```py
+from PythonObject import PythonObject
+alias int = PythonObject
+
+let x : int = 2
+print(x ** 100) # `int` does not overflow: 1267650600228229401496703205376
+```
 
 ### String
 
