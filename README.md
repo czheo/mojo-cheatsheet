@@ -10,10 +10,9 @@ print(s[:5])
 print(s[::2])
 print(String("hello world")[0])
 
-# !!Code below DO NOT work because `StringRef` is not subscriptable!!
 let s = "hello world" # s is a `StringRef`
-print(s[:5])
-print("hello world"[0])
+print(s[:5]) # ERROR: `StringRef` is not subscriptable!!
+print("hello world"[0]) # ERROR: `StringLiteral` is not subscriptable
 ```
 
 ### Type casting
