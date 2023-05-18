@@ -28,7 +28,8 @@ let y : SI8 = x.cast[DType.si8]()
 Cast `SIMD` to `Int`
 ```py
 let x : UI8 = 42
-let y : Int = x.to_int()
+let y : Int = x.to_int() # `SIMD` to `Int`
+let z : UI8 = y          # `Int` to `SIMD`
 ```
 
 ### Interact with Python
