@@ -47,6 +47,34 @@ let py = Python.import_module("builtins")
 py.print("The answer is", x)
 ```
 
+Create PythonObject explictly
+```py
+# Translate to PythonObject
+from PythonObject import PythonObject
+alias int = PythonObject
+alias str = PythonObject
+alias float = PythonObject
+
+let n : int = 2
+print(n ** 100) # `int` does not overflow
+
+let f : float = 0.6
+print(f.hex()) # f is a Python `float` object
+
+let s1 : str = "xxbaaa"
+print(s1.upper()) # s1 is a Python `str` object
+# continue ...
+```
+
+Translate PythonObject to Mojo types
+```py
+# ... continued
+from String import String
+let m : Int = n.to_int()
+let s2 : String = s1.to_string()
+let d : F64 = f.to_f64()
+```
+
 ### Pointer
 
 Create a `Pointer`
