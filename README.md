@@ -84,6 +84,7 @@ print(ts)
 ```py
 from Intrinsics import external_call
 
+# definition of `struct tm`
 alias int = SI32
 @value
 @register_passable("trivial")
