@@ -11,7 +11,7 @@ print(s[::2])
 print(String("hello world")[0])
 
 let s = "hello world" # s is a `StringRef`
-print(s[:5]) # ERROR: `StringRef` is not subscriptable!!
+print(s[:5]) # ERROR: `StringRef` is not subscriptable
 print("hello world"[0]) # ERROR: `StringLiteral` is not subscriptable
 ```
 
